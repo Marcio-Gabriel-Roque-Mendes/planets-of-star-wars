@@ -1,41 +1,135 @@
-.App {
+
+body {
+  background-color: rgba(25, 25, 25, 0.545);
+  font-family: Roboto, Helvetica, Arial, sans-serif;;
+}
+
+.title {
+  background-color: black;
+  color: aliceblue  ;
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.imageTitle{
+  margin-left: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-@media ( prefers-reduced-motion : no-preference ) {
-
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.articleLetter {
+  color: black;
 }
 
-.App-header {
-  align-items: center;
-  background-color: #282c34;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  justify-content: center;
-  min-height: 100vh;
+.search-input {
+margin-left: 550px;
+width: 200px;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 10px;
+text-transform: uppercase;
+border-radius: 4px;
+box-shadow: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-input:focus::placeholder{
+  color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
+.column-select {
+  margin-left: 15px;
+  color: rgb(255, 196, 0);
+}
 
-  from {
-    transform: rotate(0deg);
-  }
+.filters-container {
+  margin-left: 25px;
+  margin-top: 25px;
+  color: rgb(203 213 225);
+  font-weight: bold;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.filter-element {
+  margin-left: 25px;
+  color: rgb(255, 196, 0);
+}
+
+.inputs {
+  margin-left: 5px;
+  border: 0;
+  border-bottom: 2px solid rgb(80, 47, 47);
+  background-color: transparent;
+  outline: 0;
+  color: blanchedalmond;
+  font-weight: bold ;
+}
+
+.inputs:hover {
+  font-weight: bold;
+  color: black;
+}
+
+.inputs:active {
+  font-weight: bold;
+  color: black;
+  /* background-color: grey; */
+}
+
+.background-select{
+  background-color: rgba(25, 25, 25, 0.553);
+}
+
+.button-filter {
+  margin-left: 12px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 0, 0.5);
+  color: rgb(255, 255, 0);
+  background-color: rgba(0, 0, 0, 0.212);
+  padding: 10px
+} 
+
+.button-filter:hover {
+  background-color: rgb(255, 200, 0);
+  color: black;
+}
+
+.number-input {
+  width: 115px;
+}
+
+.remove-button {
+    width: 120px;
+    text-align: center;
+}
+
+.buttons-filter {
+  margin-left: 400px;
+  margin-top: 25px;
+}
+
+.table-container {
+  margin-left: 25px;
+  margin-top: 30px
+}
+
+.cabecalho-table {
+  background-color: black;
+  align-items: flex-start;
+  color: aliceblue;
+}
+
+.body-table {
+  background-color: rgb(65, 63, 63);  
+  color: aliceblue;
+}
+
+.films-width {
+  width: 50px;
+}
+
+
+th, td {
+  padding-left: 15px;
+  padding-right: 15px;
+  /* margin-left: 60px; */
 }

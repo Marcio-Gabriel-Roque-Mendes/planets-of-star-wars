@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import ContextStarWars from './ContextStarWars';
@@ -25,7 +24,8 @@ const ProviderStarWars = ({ children }) => {
   };
 
   const getStarWarsPlanets = () => { // SO CHAMADA A API E SALVAR NO ESTADO (COM DUAS FORMAS DE FAZER)
-    fetch('https://swapi-trybe.herokuapp.com/api/planets/')
+    // fetch('https://swapi-trybe.herokuapp.com/api/planets/')
+    fetch('https://swapi.dev/api/planets/')
       .then((response) => response.json())
       .then((response) => {
         setArrayPlanetas(response.results.sort((a, b) => a.name.localeCompare(b.name)));
