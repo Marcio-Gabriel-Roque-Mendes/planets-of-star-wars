@@ -1,0 +1,8 @@
+Nesse projeto desenvolvi uma aplicação em React que retorna uma API com dados dos planetas de Star Wars em uma tabela. Sendo possível encontrar o planeta pelo seu nome, ou filtrar o planeta pela sua população, período orbital, diâmetro entre outras opções, também é possível ordenar em ordem crescente ou decrescente com base no filtro escolhido.
+
+Para o desenvolvimento do projeto utilizei componentes funcionais, Context API e React Hooks para controlar os estados globais, além de toda aplicação ser testada com a RTL (React Testing Library). Para estilização utilizei o framework Tailwind.
+
+Veja a aplicação em funcionamento: 
+Veja o repositório da aplicação: 
+
+#react #context #rtl #hooks #tailwind
