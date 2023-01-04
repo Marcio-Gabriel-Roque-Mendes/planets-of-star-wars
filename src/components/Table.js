@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import ContextStarWars from '../context/ContextStarWars';
 import PlanetsImage from './Planets';
 import StarWarsImage from './StarWarsImage';
@@ -41,6 +41,10 @@ function Table() {
   const handleClick = () => {
     setOrder({ column: orderCollum, sort: radio });
   };
+
+  useEffect(() => {
+    document.title = 'Star Wars Planets'
+  }, []);
 
   return (
     
