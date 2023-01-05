@@ -65,11 +65,10 @@ src/tests
 
 ## Prévia da aplicação rodando:
 
-https://user-images.githubusercontent.com/99992471/210630189-6f13fdf5-106d-4815-b10e-c9a1959e4e1f.mp4
-
+https://user-images.githubusercontent.com/99992471/210674434-09c450e1-dd8a-41de-81c9-114cccdd1961.mp4
 
 ## Desenvolvido por: 
-Marcio Gabriel Roque
+Marcio Gabriel Roque Mendes
 
+### Observações:
 Código desenvolvido no projeto Star Wars Planet Search durante o curso de Desenvolvimento Full Stack da [Trybe](https://www.betrybe.com/) no qual os alunos deveriam desenvolve-lo para fins didáticos, essa aplicação consome de uma api disponibilizada pela Trybe.
-
