@@ -259,9 +259,6 @@ function Table() {
             <th>
               Population
             </th>
-            {/* <th>
-              Films
-            </th> */}
             <th>
               Created
             </th>
@@ -289,7 +286,6 @@ function Table() {
                   <td>{planeta.terrain}</td>
                   <td>{planeta.surface_water}</td>
                   <td>{planeta.population}</td>
-                  {/* <td>{planeta.films}</td> */}
                   <td>{planeta.created}</td>
                   <td>{planeta.edited}</td>
                   <td>{planeta.url}</td>

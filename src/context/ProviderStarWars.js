@@ -8,9 +8,8 @@ const ProviderStarWars = ({ children }) => {
   const [filtros, setFiltros] = useState([]);
   const [data, setData] = useState([]);
   const [order, setOrder] = useState();
-  // const [filterByNumericValues, setFilterByNumericValues] = useState([]);
 
-  const contextValue = { /* Objeto contextValue */
+  const contextValue = {
     arrayPlanetas,
     setArrayPlanetas,
     inputText,
@@ -19,61 +18,21 @@ const ProviderStarWars = ({ children }) => {
     setFiltros,
     order,
     setOrder,
-    // filterByNumericValues,
-    // setFilterByNumericValues,
   };
 
-  const getStarWarsPlanets = () => { // SO CHAMADA A API E SALVAR NO ESTADO (COM DUAS FORMAS DE FAZER)
-    // fetch('https://swapi-trybe.herokuapp.com/api/planets/')
+  const getStarWarsPlanets = () => { 
     fetch('https://swapi.dev/api/planets/')
       .then((response) => response.json())
       .then((response) => {
         setArrayPlanetas(response.results.sort((a, b) => a.name.localeCompare(b.name)));
 
         setData(response.results.sort((a, b) => a.name.localeCompare(b.name)));
-
-        // response.results.map((planet) => setArrayPlanetas((prevState) => [...prevState, planet.name])); //FORMA 1
-
-        // response.results
-        //   .map((planet) => setArrayPlanetas([...arrayPlanetas, planet])); // FORMA 2
       });
   };
 
   useEffect(() => {
     getStarWarsPlanets();
   }, []);
-
-  // const numero = 3000;
-
-  // useEffect(() => {
-  //   setArrayPlanetas(data);
-  //   const comparacao = arrayPlanetas.filter((planeta) => Number(planeta
-  //     .population) > numero);
-  //   setArrayPlanetas(comparacao);
-  // }, [filtros]);
-
-  // useEffect(() => {
-  //   setArrayPlanetas(data);
-
-  //   if (filtros[0]?.operador === 'maior que') {
-  //     const comparacao = arrayPlanetas
-  //       .filter((planeta) => Number(planeta[filtros[0]
-  //         .coluna]) > Number(filtros[0].valor));
-  //     return setArrayPlanetas(comparacao);
-  //   }
-  //   if (filtros[0]?.operador === 'menor que') {
-  //     const comparacao = arrayPlanetas
-  //       .filter((planeta) => Number(planeta[filtros[0]
-  //         .coluna]) < Number(filtros[0].valor));
-  //     return setArrayPlanetas(comparacao);
-  //   }
-  //   if (filtros[0]?.operador === 'igual a') {
-  //     const comparacao = arrayPlanetas
-  //       .filter((planeta) => Number(planeta[filtros[0]
-  //         .coluna]) === Number(filtros[0].valor));
-  //     return setArrayPlanetas(comparacao);
-  //   }
-  // }, [filtros]);
 
   let dados = [...data];
 
@@ -108,9 +67,6 @@ const ProviderStarWars = ({ children }) => {
   };
 
   useEffect(() => {
-    // let dados = [...data]; tirado de dentro desse useEffect,
-    // para poder ser usado na funcao ordenar() tambem
-
     filtros.forEach((filtro) => {
       if (filtro.operador === 'maior que') {
         dados = dados
