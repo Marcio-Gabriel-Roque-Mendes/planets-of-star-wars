@@ -1,4 +1,4 @@
-# Star Wars Planets :milky_way:
+# Plantes of Star Wars :milky_way:
 ## ✏ Sobre o projeto
 
 O objetivo desse projeto construído com componentes funcionais é desenvolver uma aplicação que contenha uma lista com filtros de planetas do universo de Star Wars usando <strong/>Context API</strong> e <strong/>Hooks</strong> para controlar os estados globais. :globe_with_meridians:
